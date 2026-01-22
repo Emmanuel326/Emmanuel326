@@ -24,6 +24,16 @@ My repositories aren't demos — they're forensic investigations:
 Each one forces a confrontation with kernel behavior, memory subsystems, or scheduling reality.
 
 ---
+## How I Verify Reality
+
+I don't trust results until they survive:
+- CPU pinning and isolated cores
+- warm vs cold cache runs
+- variance analysis, not single numbers
+- instrumentation (`perf`, tracing, explicit counters)
+
+If an effect disappears when conditions change, it wasn’t a property — it was noise.
+
 
 ## The Philosophy
 
@@ -44,3 +54,6 @@ The code is minimal. The understanding is maximal.
 ---
 
 *Find me on [GitHub](https://github.com/Emmanuel326) — where every commit is a question the kernel has to answer.*
+
+If you're new here, start with **false-sharing** — it's the smallest repo and the fastest way to recalibrate your mental model of "shared memory."
+
